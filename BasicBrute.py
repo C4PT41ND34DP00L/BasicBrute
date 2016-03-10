@@ -1,3 +1,10 @@
+#!/usr/bin/env python
+
+'''
+Author: Andrew Scott
+Date: 3/9/2016
+'''
+
 import threading 
 import Queue
 import requests
@@ -64,7 +71,7 @@ if __name__ == '__main__':
     target_url = options.target_url
     thread_count = options.thread_count
 
-    # exit if required arguements are missing
+    # exit if required arguments are missing
     if (worddict == None) | (username == None) | (target_url == None):
         print parser.usage
         exit(1)
